@@ -23,6 +23,8 @@
     trippy
     vscodium
     zola
+    postgresql
+    clickhouse
     # civo
     # csview
     # delta
@@ -81,6 +83,10 @@
     lfs.enable = true;
     userName = "kamal";
     userEmail = "detoxifiedplant@gmail.com";
+    signing = {
+      key = "2E3AC57445864FC1";
+      signByDefault = true;
+    };
     aliases = {
       co = "checkout";
       ci = "commit";

@@ -14,6 +14,8 @@
     lazygit
     librewolf
     mkalias
+    noto-fonts
+    noto-fonts-emoji
     obsidian
     onefetch
     silicon
@@ -23,8 +25,15 @@
     trippy
     vscodium
     zola
-    postgresql
-    clickhouse
+    aerospace
+    firefox
+    xh
+    # nikitabobko/tap/aerospace
+    # keepassxc
+    raycast
+    karabiner-elements
+    _1password
+    # pinentry-mac
     # civo
     # csview
     # delta
@@ -46,20 +55,15 @@
     # zsh-syntax-highlighting
   ];
 
-  home.sessionVariables = {
-  };
-
-  # services.postgresql = {
-  #   enable = true;
-  #   package = pkgs.postgresql_17;
-  # };
+  home.sessionVariables = { };
 
   home.sessionPath = [
     "/run/current-system/sw/bin"
-      "$HOME/.nix-profile/bin"
+    "$HOME/.nix-profile/bin"
   ];
 
   programs.home-manager.enable = true;
+  programs.home-manager.path = "$HOME/devel/home-manager";
 
   programs.bat = {
     enable = true;
@@ -212,9 +216,11 @@
     settings = {
       # add_newline = true;
       username = {
-        style_user = "green bold";
+        # style_user = "green bold";
+        style_user = "";
         style_root = "red bold italic";
-        format = "[$user]($style) ";
+        format = "🌼($style)";
+        # format = "[$user]($style) ";
         disabled = false;
         show_always = true;
       };

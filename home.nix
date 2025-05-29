@@ -64,6 +64,8 @@
 
   programs.home-manager.enable = true;
   programs.home-manager.path = "$HOME/devel/home-manager";
+  # xdg.enable = true;
+  # home.file.".config" = { source = ./config; recursive = true; };
 
   programs.bat = {
     enable = true;
@@ -227,7 +229,7 @@
       hostname = {
         ssh_only = false;
         ssh_symbol = "🌐 ";
-        format = "@[$hostname](#ca9ee6 bold italic) ";
+        format = "@ [$hostname](#ca9ee6 bold italic) ";
         trim_at = ".local";
         disabled = false;
       };
@@ -237,8 +239,21 @@
         success_symbol = "[❯](bold blue)";
         vimcmd_replace_one_symbol = "[](bold fg:teal)";
         vimcmd_replace_symbol = "[](bold fg:teal)";
-        vimcmd_symbol = "[](bold fg:color_green)";
+        vimcmd_symbol = "[ ](bold fg:color_green)";
         vimcmd_visual_symbol = "[](bold fg:peach)";
+      };
+      git_status = {
+        conflicted = "🔥";
+        ahead = "🍀";
+        behind = "😰";
+        diverged = "😵";
+        up_to_date = "✨";
+        untracked = "👀";
+        stashed = "🫣";
+        modified = "🐣";
+        staged = "[\($count\)](green)🐥";
+        renamed = "🌾";
+        deleted = "🗑";
       };
       palette = "catppuccin_macchiato";
       palettes = {

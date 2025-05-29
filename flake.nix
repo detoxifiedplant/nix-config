@@ -78,6 +78,18 @@
         #   # onActivation.upgrade = true;
         # };
 
+        # for only home-manager
+        # outputs = { nixpkgs, home-manager, ... }: {
+        #   homeConfigurations = {
+        #     "<username>" = home-manager.lib.homeManagerConfiguration {
+        #       # darwin is the macOS kernel and aarch64 means ARM, i.e. apple silicon
+        #       pkgs = nixpkgs.legacyPackages.aarch64-darwin;
+        #       modules = [ ./home.nix ];
+        #     };
+        #   };
+        # };
+        # nix run github:nix-community/home-manager -- switch --flake
+
         system.primaryUser = "kamal";
         system.defaults = {
           dock.autohide = true;

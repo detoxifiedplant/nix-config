@@ -91,12 +91,12 @@ automatically-unhide-macos-hidden-apps = false
     # See: https://nikitabobko.github.io/AeroSpace/commands#exec-and-forget
     # You can uncomment the following lines to open up terminal with alt + enter shortcut
     # (like in i3)
-    alt-enter = '''exec-and-forget osascript -e '
-    tell application "Terminal"
-        do script
-        activate
-    end tell'
-    '''
+    # alt-enter = '''exec-and-forget osascript -e '
+    # tell application "Terminal"
+    #     do script
+    #     activate
+    # end tell'
+    # '''
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#layout
     alt-m = 'layout h_accordion tiles'
@@ -149,6 +149,7 @@ automatically-unhide-macos-hidden-apps = false
     alt-shift-quote = 'workspace 9'
     alt-quote = 'workspace 10'
     alt-shift-s = 'workspace Server'
+    alt-shift-f = 'workspace MIT'
     alt-shift-d = 'workspace Database'
     alt-shift-c = 'workspace Code'
 

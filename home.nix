@@ -28,11 +28,11 @@
     aerospace
     firefox
     xh
-    # nikitabobko/tap/aerospace
-    # keepassxc
     raycast
     karabiner-elements
     _1password
+    # nikitabobko/tap/aerospace
+    # keepassxc
     # pinentry-mac
     # civo
     # csview
@@ -53,6 +53,44 @@
     # zoom-us
     # zsh-autosuggestions
     # zsh-syntax-highlighting
+
+    # with brew
+    # awscli
+    # duckdb
+    # libnghttp2
+    # mpdecimal
+    # postgresql@14
+    # uvwasi
+    # bottom
+    # gh
+    # libnghttp3
+    # musl-cross
+    # python@3.13
+    # xz
+    # brotli
+    # htop
+    # libngtcp2
+    # ncurses
+    # readline
+    # yq
+    # c-ares
+    # icu4c@77
+    # libuv
+    # node
+    # simdjson
+    # zstd
+    # ca-certificates
+    # krb5
+    # lz4
+    # openssl@3
+    # sqlite
+    # clickhouse
+    # obs
+    # vial
+    # warp
+    # notunes
+    # slack
+    # vlc
   ];
 
   home.sessionVariables = { };
